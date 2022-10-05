@@ -6,7 +6,7 @@ var rotateSpeed = -60; // unit: seconds/360 degrees
 var imgWidth = 120; // width of images (unit: px)
 var imgHeight = 170; // height of images (unit: px)
 
-
+/* Đen Tây's */
 // ===================== start =======================
 // animation start after 1000 miliseconds
 setTimeout(init, 1000);
@@ -20,7 +20,7 @@ var aEle = [...aImg, ...aVid]; // combine 2 arrays
 // Size of images
 ospin.style.width = imgWidth + "px";
 ospin.style.height = imgHeight + "px";
-
+/* Đen Tây's */
 // Size of ground - depend on radius
 var ground = document.getElementById('ground');
 ground.style.width = radius * 3 + "px";
@@ -46,7 +46,7 @@ function applyTranform(obj) {
 function playSpin(yes) {
   ospin.style.animationPlayState = (yes?'running':'paused');
 }
-
+/* Đen     Tây's */
 var sX, sY, nX, nY, desX = 0,
     desY = 0,
     tX = 0,
@@ -78,7 +78,7 @@ document.onpointerdown = function (e) {
     sX = nX;
     sY = nY;
   };
-
+/* Đen              Tây's */
   this.onpointerup = function (e) {
     odrag.timer = setInterval(function () {
       desX *= 0.95;
@@ -97,7 +97,7 @@ document.onpointerdown = function (e) {
 
   return false;
 };
-
+/* Đen Tây's */
 document.onmousewheel = function(e) {
   e = e || window.event;
   var d = e.wheelDelta / 20 || -e.detail;
